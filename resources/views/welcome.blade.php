@@ -14,30 +14,13 @@
 </head>
 
 <body class="bg-teal-700 text-white">
-<div x-data="{ open: false }">
-    <button @click="open = true">Open Dropdown</button>
 
-    <ul
-        x-show="open"
-        @click.away="open = false"
-        class="bg-gray-900"
-    >
-        Dropdown Body
-    </ul>
-</div>
 
-<div x-data="{name: null}">
-    <label>
-        <input type="text" x-model="name">
-    </label>
-    <div x-text="name"></div>
-</div>
+<x-alert class="mb-2" variant="green" body="hello world" />
 
-<div x-data="{counter: 0}">
-    <button @click="counter++">+</button>
-    <button @click="counter--">-</button>
-    <span x-text="counter"></span>
-</div>
+<x-inline-alert class="mb-2" variant="red" body="hello world" />
+
+<x-anonymous-alert class="mb-2" variant="yellow" body="hello world" />
 
 <!-- scripts -->
 <script src="{{mix('js/app.js')}}"></script>
