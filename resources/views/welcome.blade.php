@@ -11,19 +11,16 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    <livewire:styles />
 </head>
 
 <body class="bg-teal-700 text-white">
 
-
-<x-alert class="mb-2" variant="green" body="hello world" />
-
-<x-inline-alert class="mb-2" variant="red" body="hello world" />
-
-<x-anonymous-alert class="mb-2" variant="yellow" body="hello world" />
-
+<livewire:counter counter="10" />
+<livewire:search-users />
 <!-- scripts -->
 <script src="{{mix('js/app.js')}}"></script>
+<livewire:scripts />
 </body>
 
 </html>
